@@ -21,7 +21,18 @@ namespace library
         public string title
         {
             get { return _title; }
-            set { _title = value; }
+            set {
+                // Check if any incoming char i a digit
+                if (value.Any(char.IsDigit))
+                {
+                    _title = value;
+                }
+                else
+                {
+                    Console.WriteLine("Cannot enter number for the title");
+                }
+
+            }
         }
 
         public string author
