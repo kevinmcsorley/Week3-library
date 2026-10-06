@@ -16,5 +16,13 @@ namespace library
             Console.WriteLine($"Author: {Author}");
             Console.WriteLine($"ISBN: {ISBN}");
         }
+
+        // Parameterized constructor
+        public Book(string bookTitle, string bookAuthor, int bookISBN)
+        {
+            Title = bookTitle;
+            Author = bookAuthor;
+            ISBN = bookISBN;
+        }
     }
 }
